@@ -11,6 +11,8 @@ YouTube再生リストで再生時、チャプター１を再生し終わった�
 5. 1で配置したフォルダを開き、「フォルダーの選択」をクリックしてください。
 6. 「拡張機能を読み込みました」と表示されれば成功です。
 
+### 言い訳
+
 ![image](https://github.com/LutraKawauso/Chapter2Skipper/assets/148268606/96cf78a5-ec1b-4697-b6a3-7c4bb6b32f2d)
 
 ### 免責事項
