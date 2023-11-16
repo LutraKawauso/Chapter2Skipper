@@ -3,15 +3,18 @@ if (!$('body').data('script-loaded')) {
 
   //1秒ごとに監視
   setInterval(function() {
-    let time_str = get_time();
-    if (time_str) {
-      let time_sec = convertTimeToSeconds(time_str);
-      let video = document.querySelector('.video-stream');
-      if (video) {
-        if (video.currentTime >= time_sec - 1) {
-          let prev_btn = $('a.ytp-next-button')[0];
-          if (prev_btn) {
-            prev_btn.click();
+    //再生リスト再生時
+    if(window.location.href.includes("list=")){
+      let time_str = get_time();
+      if (time_str) {
+        let time_sec = convertTimeToSeconds(time_str);
+        let video = document.querySelector('.video-stream');
+        if (video) {
+          if (video.currentTime >= time_sec) {
+            let prev_btn = $('a.ytp-next-button')[0];
+            if (prev_btn) {
+              prev_btn.click();
+            }
           }
         }
       }
