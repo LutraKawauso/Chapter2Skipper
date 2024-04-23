@@ -24,7 +24,7 @@ if (!$('body').data('script-loaded')) {
 
 //チャプター２の時刻を取得
 function get_time(){
-  let chapters = $('#primary ytd-horizontal-card-list-renderer[modern-chapters] #items').children();
+  let chapters = $('#secondary ytd-horizontal-card-list-renderer[modern-chapters] #items').children();
   if (chapters.length == 2) {
     let chapter2 = $(chapters[1]);
     return $(chapter2.find('#time')[0]).text();
